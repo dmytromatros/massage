@@ -1,0 +1,242 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	/*height: 100%;*/
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+.content {
+	width: 70%;
+	height: 100%;
+	/*background-color: red;*/
+	margin: auto;
+}
+@media (max-width: 1060px) {
+	.content{
+		width: 95%;
+	}
+}
+.menu_bar {
+	z-index: 5;
+	width: 100%;
+	background-color: #342020;
+	position:fixed;
+}
+.menu_ul{
+	display: flex;
+	align-items: center;
+}
+@media  (max-width: 790px){
+	.menu_ul {
+		display: none;	
+	}
+}
+.burger_menu{
+	display: none;
+	visibility: hidden;
+}
+.burger_menu img{
+	height: 50px;
+}
+@media (max-width: 790px){
+	.burger_menu{
+		position: absolute;
+		top: 10px;
+		right: 30px;
+		display: block;
+		visibility: visible;
+	}
+}
+.menu_bar_menu {
+	display: flex;
+	justify-content: space-between;
+}
+.menu_logo {}
+.menu_logo img{
+	height: 70px;
+}
+.menu_list {
+	width: 600px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu_child {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	color:white;
+	height: 100%;
+	padding: 10px;
+}
+.menu_child:hover{
+	border-bottom: solid 2px black;
+}
+.menu_in_burger {
+	
+	display: none;
+}
+.mb_butt:hover .menu_in_burger{
+	display: block;
+}
+
+.mb_back {
+	position: absolute;	
+	height: 300px;	
+	width: 180px;	
+	padding-top: 10px;
+	right: -30px;
+	background-color: #342020;
+	display: flex;
+	justify-content: center;
+}
+.mb_ul {
+	
+}
+.mb_list {
+	height: 100%;
+	align-content: space-around;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.mb_list a{
+	display: block;
+	width: 80%;
+	text-align: center;
+}
+.mb_child {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	color:white;
+	height: 100%;
+	padding: 10px;
+}
+
+.anceta_top {
+	padding-top: 100px;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: #3B2222;
+	padding-bottom: 35px;
+}
+.anceta_lines {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: rgba(237,125,4, 0.5); 
+	box-shadow: black 0 0 10px;
+	border-radius: 5px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+.appointment_form{
+	width: 900px;
+	overflow: hidden;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+.appointment_form input{
+	display: inline-block;
+	background-color: rgba(255,255,255,0.3);
+	border-bottom: 1px black solid;
+	margin: 10px 0;
+	padding: 15px;
+	font-size: 20px; 
+	font-family: 'Roboto', sans-serif;
+}
+.text_input{
+	width: 500px;
+}
+@media (max-width: 1060px) {
+	.text_input{
+		display: block;
+		width: 98%;
+	}
+	.appointment_form{
+		padding: 0 10px;
+	}
+}
+.appointment_form span{
+	display: inline-block;
+	margin: 10px 0;
+	margin-right: 10px;
+}
+.radio{
+	width: 50px;
+}
+@media (max-width: 1060px) {
+	.radio{
+	width: 50px;
+}
+}
+
+.big_name{
+	font-size: 30px;
+	font-weight: 600;
+}
+button{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	border: black 1px solid;
+	margin-top: 30px;
+}
+footer{
+	height: 80px;	
+	background-color: #342020;
+	font-family: 'Roboto', sans-serif;	
+	color: white;
+	padding-bottom: 25px;
+	color:  #ED9804;
+}
+.menu_footer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 18px;
+}
+.site-info {
+	text-align: center;
+}

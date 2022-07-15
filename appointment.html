@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="css/style_appointment.css">
+	<title>Appointment</title>
+</head>
+<body>
+	<div class="menu_bar">
+		<div class="content">
+			<div class="menu_bar_menu">
+				<div class="menu_logo">
+					<img src="include/logo2.png">
+				</div>
+				<div class="menu_ul">
+					<ul class="menu_list">
+						<a href="index.html"><li class="menu_child">Главная</li></a>
+						<a href="index.html#about"><li class="menu_child">Обо мне</li></a>
+						<a href="index.html#cont"><li class="menu_child">Контакты</li></a>
+						<a href="index.html#review"><li class="menu_child">Отзывы</li></a>
+						<a href="appointment.html"><li class="menu_child">Запись</li></a>
+					</ul>
+				</div>
+				<div class="burger_menu">
+					<div class="mb_butt">
+						<img src="include/burger.png" alt="">
+						<div class="menu_in_burger">
+							<div class="mb_back">	
+								<div class="mb_ul">
+									<ul class="mb_list">
+										<a href="index.html"><li class="mb_child">Главная</li></a>
+										<a href="index.html#about"><li class="mb_child">Обо мне</li></a>
+										<a href="index.html#cont"><li class="mb_child">Контакты</li></a>
+										<a href="index.html#review"><li class="mb_child">Отзывы</li></a>
+										<a href="appointment.html"><li class="mb_child">Запись</li></a>
+									</ul>
+								</div>
+							</div>	
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="anceta_top">
+			<span>Зполните анкету клиента</span>
+		</div>
+		<div class="anceta_lines">	
+			<form action="appointment.php" method="POST" class="appointment_form">
+				<span>Имя / Фамилия</span><input type="text" name="user_name" class="text_input"><br>
+				<span>Контактный номер</span><input type="text" name="phone" class="text_input"><br>
+				<span>Дата рождения</span><input type="date" name="date" 	class="text_input"><br>
+				<span>Фейсбук / Инстаграм</span><input type="text" name="facebook" class="text_input"><br>
+
+				<span class="big_name">От куда узнали?</span> <br>
+				<input type="radio" name="info_from" class="radio" value="соцсети"><span>Соцсети</span><br>
+				<input type="radio" value="друзья" name="info_from" class="radio"><span>От друзей</span><br>
+				<input type="radio" value="сайт" name="info_from" class="radio"><span>С сайта</span><br> 
+				<span>В какое время вам будет удобно прийти на сеанс?</span><input type="text" name="time" class="text_input"><br>
+				
+				<span class="big_name">Если у вас обнаружены какие-либо заболивания, укажите об этом:</span><br>
+
+				<span>Сердечно-сосудистая система</span><input type="text" name="hart" class="text_input"><br>
+				<span>Дыхательная система</span><input type="text" name="breath" class="text_input"><br>
+				<span>Пищеварительная система</span><input type="text" name="stomach" class="text_input"><br>
+				<span>Опорно-двигательная система</span><input type="text" name="move" class="text_input"><br>
+				<span>Аллергии</span><input type="text" name="ellergia" class="text_input"><br>
+				<span>Заболевания крови</span><input type="text" name="blood" class="text_input"><br>
+				<span>Гормональные нарушения</span><input type="text" name="gormoni" class="text_input"><br>
+				<span>Эпилепсия</span><input type="text" name="epilepsy" class="text_input"><br>
+				<span>Заболивания кожи</span><input type="text" name="skin" class="text_input"><br>
+				<span>Заболивания сосудов</span><input type="text" name="sosudi" class="text_input"><br>
+				<span>Оперативные вмешательства</span><input type="text" name="operation" class="text_input"><br>
+				<span>Принимаете ли вы какие либо препараты?</span><input type="text" name="prepar" class="text_input"><br>
+<span class="big_name">Для женщин:</span><br>
+				<span>Если беременны, какой срок беремености?</span><input type="tel" name="pregn" style="width: 100px;"><br>
+
+				<span>Кормите грудью?</span><input type="text" name="breast" class="text_input"><br>
+				
+				<button onclick="myFunction1()">Записаться</button>
+			</form>
+			<script>
+						function myFunction1(){
+      				alert('Ваше сообщение было успешно отправлено!');
+						}
+      		</script>
+		</div>
+	</div>
+<footer>	
+	<div class="content">	
+		<div class="menu_footer">	
+			<div class="site-info">
+			<p>Copyright&nbsp;<i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;2021 All rights reserved&nbsp;</p>
+		</div>
+		</div>
+		<div class="contacts_footer">	
+		</div>
+	</div>
+</footer>
+</body>
+</html>
